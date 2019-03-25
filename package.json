@@ -1,0 +1,10 @@
+{
+  "name": "@akuntal/react-utilities",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "react": "^16.8.5"
+  }
+}
