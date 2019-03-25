@@ -1,10 +1,10 @@
-# @akuntal/react-utilities
+# react-convenience
 
 React Utilities.
 
 # installation
 
-Run `yarn add @akuntal/react-utilities`
+Run `yarn add react-convenience`
 
 ## Usages
 
@@ -12,7 +12,7 @@ Run `yarn add @akuntal/react-utilities`
 
 It delays execution of function, takes 2 argument first is callback and second is delay time.
 
-`import { debounceEvent } from '@akuntal/react-utilities';`
+`import { debounceEvent } from 'react-convenience';`
 
 `import { TextArea } from '...';`
 
@@ -22,7 +22,7 @@ It delays execution of function, takes 2 argument first is callback and second i
 
 ### withOnChangeDebounce
 
-`import { withOnChangeDebounce } from '@akuntal/react-utilities';`
+`import { withOnChangeDebounce } from 'react-convenience';`
 
 `import { TextArea } from '...';`
 

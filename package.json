@@ -1,8 +1,13 @@
 {
-  "name": "@akuntal/react-utilities",
+  "name": "react-convenience",
   "version": "0.0.1",
   "main": "index.js",
   "license": "MIT",
+  "private": false,
+  "repository": {
+    "url": "https://github.com/akuntal/react-utilities",
+    "type": "git"
+  },
   "dependencies": {
     "lodash": "^4.17.11",
     "react": "^16.8.5"
