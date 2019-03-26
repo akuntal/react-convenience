@@ -3,8 +3,8 @@ import { debounce } from 'lodash';
 export const debounceEvent = (...args) => {
   const debouncedEvent = debounce(...args);
 
-  return (e) => {
+  return (e, ...restArgs) => {
     e.persist();
-    return debouncedEvent(e);
+    return debouncedEvent(e, ...restArgs);
   };
 };

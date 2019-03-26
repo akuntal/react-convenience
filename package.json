@@ -1,15 +1,33 @@
 {
   "name": "react-convenience",
-  "version": "0.0.2",
-  "main": "index.js",
+  "version": "0.0.5",
+  "main": "dist/index.js",
   "license": "MIT",
   "private": false,
   "repository": {
-    "url": "https://github.com/akuntal/react-utilities",
+    "url": "https://github.com/akuntal/react-convenience",
     "type": "git"
   },
-  "dependencies": {
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.1",
+    "html-webpack-plugin": "^3.2.0",
     "lodash": "^4.17.11",
-    "react": "^16.8.5"
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --mode development",
+    "build": "webpack --mode production",
+    "transpile": "node_modules/@babel/cli/bin/babel.js src -d dist --copy-files",
+    "prepublishOnly": "npm run transpile"
   }
 }
