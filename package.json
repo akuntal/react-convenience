@@ -24,6 +24,9 @@
     "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.2.1"
   },
+  "peerDependencies": {
+    "react": "^16.8.5"
+  },
   "scripts": {
     "start": "webpack-dev-server --mode development",
     "build": "webpack --mode production",
