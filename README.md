@@ -26,7 +26,7 @@ It delays execution of function, takes 2 argument first is callback and second i
 
 ### withOnChangeDebounce
 
-HOC to help debounce handler onChange.
+HOC to help debounce handler `onChange`
 
 ```
     import { withOnChangeDebounce } from 'react-convenience';
