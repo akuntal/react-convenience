@@ -22,7 +22,8 @@ const WEBPACK_COMMON_CONFIG = {
       template: path.join(__dirname, 'examples/src/index.html'),
       filename: './index.html'
     })
-  ]
+  ],
+  devtool: 'source-map'
 };
 
 module.exports = WEBPACK_COMMON_CONFIG;

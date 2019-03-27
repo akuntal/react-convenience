@@ -9,7 +9,7 @@ export const withOnChangeDebounce = (wait = 500) => WrappedComponent => ({
 }) => {
   const [val, setVal] = useState(value);
 
-  const propogateOnChange = e => onChange(e);
+  const propogateOnChange = (e, callback) => callback(e);
 
   const debouncedPropogateOnChange = useCallback(
     debounceEvent(propogateOnChange, wait),
@@ -21,8 +21,8 @@ export const withOnChangeDebounce = (wait = 500) => WrappedComponent => ({
   }, [value]);
 
   const handlerOnChange = e => {
-    debouncedPropogateOnChange(e);
     setVal(e.target.value);
+    debouncedPropogateOnChange(e, onChange);
   };
 
   return (
